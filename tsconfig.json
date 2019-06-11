@@ -2,7 +2,11 @@
   "compileOnSave": false,
   "compilerOptions": {
     "baseUrl": "./",
-    "outDir": "./dist/out-tsc",
+    "outDir": "../out-tsc/spec",
+    "types": [
+      "jasmine",
+      "node"
+    ],
     "sourceMap": true,
     "declaration": false,
     "module": "es2015",
@@ -17,6 +21,14 @@
     "lib": [
       "es2018",
       "dom"
+    ],
+    "files": [
+      "test.ts",
+      "polyfills.ts"
+    ],
+    "include": [
+      "**/*.spec.ts",
+      "**/*.d.ts"
     ]
   }
 }

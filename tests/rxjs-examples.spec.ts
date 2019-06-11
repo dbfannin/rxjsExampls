@@ -14,8 +14,6 @@ import {
 import {TestScheduler} from 'rxjs/testing';
 
 
-/* Marble testing documentation https://medium.com/@bencabanes/marble-testing-observable-introduction-1f5ad39231c */
-
 
 describe('RxjsExamples', () => {
   let testScheduler: TestScheduler;
@@ -405,22 +403,3 @@ describe('RxjsExamples', () => {
   // });
 });
 
-
-/**
- * Things to know:
- * Subjects / BehaviorSubjects, ReplaySubjects
- *
- *
- * forkJoin, combineLatest, merge, concat, from, fromEvent, of
- *
- * map, tap, take, takeUntil, pairwise, startWith, catchError, filter, debounce/debounceTime, throttle/throttleTime, distinctUntilChanged,
- * distinctUntilKeyChanged, delay, finalize, timeout, shareReplay
- *
- * switchMap/switchMapTo, concatMap/concatMapTo
- *
- *
- * Why Multicast?
- * What's the danger of using async pipe when unicasting
- * Cold vs Hot observable
- * what is a connectable observable
- */
